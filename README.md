@@ -36,7 +36,7 @@ Since we have our virtual machine now, let's set some firewall rules.
 
 I added two rules to first accept all TCP and UDP traffic from my IP address.
 
-![alt text](FirewallGroup.jpg)
+![alt text](FirewallG.jpg)
 
 Make sure to apply the firewall group to the virtual machine.
 
@@ -92,7 +92,7 @@ Lets add three rules. For the T-Pot ports that we will need access to, set the a
 
 However, for TCP and UDP, accept traffic from any IP address and to any port.
 
-![alt text](NewFirewallRules.jpg)
+![alt text](NewFirewall.jpg)
 
 We should start receiving attacks soon.
 
@@ -102,7 +102,7 @@ Nice! This shows that our firewall rules have been applied.
 
 To get some more data in, I wanted about a day to check in again with the server. Here's how it looks!
 
-![alt text](Attacks2.jpg)
+![alt text](Attacks22.jpg)
 
 Wow, 38k attacks! The world really wants our server.
 
@@ -110,7 +110,7 @@ Let's take a look at Kibana, a part of the Elastic Stack.
 
 We can get more detailed insights about the attacks that we received here.
 
-![alt text](Kibana1.jpg)
+![alt text](Kibana11.jpg)
 
 Here, we can see how much of attacks that our individual honeypots received. 
 
@@ -122,7 +122,7 @@ We can also see a different view of the Attack Map. Lots of attacks from the Dut
 
 Here is the next part.
 
-![alt text](Kibana2.jpg)
+![alt text](Kibana22.jpg)
 
 One thing that surprised me was the sheer amount of attacks with the destination port of 5060, even more than port 22 (SSH) or 443 (HTTPS).
 
@@ -136,7 +136,7 @@ Additionally, we can see that most attacks were carried over through Linux distr
 
 Next!
 
-![alt text](Kibana3.jpg)
+![alt text](Kibana33.jpg)
 
 We can see that different countries (the top 5 most attacked) have different tendencies in their attacks.
 
@@ -156,7 +156,7 @@ It might be targetting the monitoring system, Suricata, rather than our actual s
 
 Lets look at the next part.
 
-![alt text](Kibana4.jpg)
+![alt text](Kibana44.jpg)
 
 Here we see a log of all attempted login details, both username and password.
 
@@ -172,7 +172,7 @@ There are also some funny ones. Some script kiddies might have found our server.
 
 Lets move on to the final section of the Kibana interface.
 
-![alt text](Kibana5.jpg)
+![alt text](Kibana55.jpg)
 
 This section contains extremely useful details for further investigation.
 
